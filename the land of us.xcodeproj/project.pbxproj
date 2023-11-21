@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		ED9638FA2B0D305C0082C0C7 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = ED9638F92B0D305C0082C0C7 /* main.c */; };
+		ED9639022B0D32D60082C0C7 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED9639012B0D32D60082C0C7 /* SDL2.framework */; };
+		ED9639032B0D32D60082C0C7 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ED9639012B0D32D60082C0C7 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -20,11 +22,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		ED9639042B0D32D60082C0C7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ED9639032B0D32D60082C0C7 /* SDL2.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		ED9638F62B0D305C0082C0C7 /* the land of us */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "the land of us"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED9638F92B0D305C0082C0C7 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		ED9639012B0D32D60082C0C7 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED9639022B0D32D60082C0C7 /* SDL2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +58,7 @@
 			children = (
 				ED9638F82B0D305C0082C0C7 /* the land of us */,
 				ED9638F72B0D305C0082C0C7 /* Products */,
+				ED9639002B0D32D60082C0C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +78,14 @@
 			path = "the land of us";
 			sourceTree = "<group>";
 		};
+		ED9639002B0D32D60082C0C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED9639012B0D32D60082C0C7 /* SDL2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -72,6 +96,7 @@
 				ED9638F22B0D305C0082C0C7 /* Sources */,
 				ED9638F32B0D305C0082C0C7 /* Frameworks */,
 				ED9638F42B0D305C0082C0C7 /* CopyFiles */,
+				ED9639042B0D32D60082C0C7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -245,6 +270,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -253,6 +282,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
