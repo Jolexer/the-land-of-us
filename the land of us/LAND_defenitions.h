@@ -8,5 +8,11 @@
 #ifndef LAND_defenitions_h
 #define LAND_defenitions_h
 
+#include <SDL2/SDL.h>
+
+struct LAND_window {
+    SDL_Window* window;
+    
+};
 
 #endif /* LAND_defenitions_h */

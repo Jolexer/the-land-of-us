@@ -15,6 +15,8 @@
 
 //code here
 int main(void) {
-    
+    struct LAND_window* lWindow= LAND_init();
+    SDL_Delay(10000);
+    LAND_terminate(lWindow);
     return 0;
 }

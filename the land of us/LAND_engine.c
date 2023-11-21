@@ -7,14 +7,18 @@
 
 #include "LAND_engine.h"
 #include <SDL2/SDL.h>
+#include <stdlib.h>
 
-int LAND_init(void) {
+struct LAND_window* LAND_init(void) {
     SDL_Init( SDL_INIT_VIDEO );
+    struct LAND_window* lWindow = malloc(sizeof(struct LAND_window));
+    lWindow->window = SDL_CreateWindow("The land of Us.", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 1280, 720, SDL_WINDOW_SHOWN);
     
-    return 0;
+    return lWindow;
 }
 
-void LAND_terminate(void) {
+int LAND_terminate(struct LAND_window* lWindow) {
+    free(lWindow);
     SDL_Quit();
-    return;
+    return 0;
 }

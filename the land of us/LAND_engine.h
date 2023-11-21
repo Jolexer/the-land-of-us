@@ -9,10 +9,11 @@
 #define LAND_engine_h
 
 #include <stdio.h>
+#include "LAND_defenitions.h"
 
-int LAND_init(void);
+struct LAND_window* LAND_init(void);
 
-void LAND_terminate(void);
+int LAND_terminate(struct LAND_window*);
 
 
 #endif /* LAND_engine_h */
