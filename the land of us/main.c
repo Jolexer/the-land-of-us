@@ -10,7 +10,8 @@
 
 #include <SDL2/SDL.h>
 
-#include "Defenitions.h"
+#include "LAND_defenitions.h"
+#include "LAND_engine.h"
 
 //code here
 int main(void) {
