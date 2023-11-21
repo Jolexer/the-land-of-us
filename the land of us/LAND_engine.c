@@ -10,15 +10,26 @@
 #include <stdlib.h>
 
 struct LAND_window* LAND_init(void) {
+    //inits
     SDL_Init( SDL_INIT_VIDEO );
     struct LAND_window* lWindow = malloc(sizeof(struct LAND_window));
+    //make window
     lWindow->window = SDL_CreateWindow("The land of Us.", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 1280, 720, SDL_WINDOW_SHOWN);
     if (lWindow->window == NULL) {
         printf("createWindow error: %s\n", SDL_GetError());
-        exit(-1);
+        return NULL;
     }
+    //make surface
+    lWindow->surface = SDL_GetWindowSurface(lWindow->window);
+    if (lWindow->surface == NULL) {
+        printf("getWindowSurface error: %s\n", SDL_GetError());
+        return NULL;
+    }
+    //done
     return lWindow;
 }
+
+
 
 int LAND_terminate(struct LAND_window* lWindow) {
     free(lWindow);

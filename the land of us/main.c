@@ -17,7 +17,11 @@
 int main(void) {
     //test
     struct LAND_window* lWindow= LAND_init();
+    if (lWindow == NULL) {
+        goto CLOSE;
+    }
     SDL_Delay(10000);
+CLOSE:
     LAND_terminate(lWindow);
     return 0;
 }

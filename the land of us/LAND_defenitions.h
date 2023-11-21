@@ -12,6 +12,7 @@
 
 struct LAND_window {
     SDL_Window* window;
+    SDL_Surface* surface;
 };
 
 #endif /* LAND_defenitions_h */
