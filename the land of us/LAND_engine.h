@@ -10,4 +10,7 @@
 
 #include <stdio.h>
 
+int LAND_init(void);
+
+
 #endif /* LAND_engine_h */

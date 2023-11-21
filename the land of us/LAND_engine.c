@@ -6,3 +6,7 @@
 //
 
 #include "LAND_engine.h"
+
+int LAND_init(void) {
+    return 0;
+}
