@@ -12,5 +12,7 @@
 
 int LAND_init(void);
 
+void LAND_terminate(void);
+
 
 #endif /* LAND_engine_h */

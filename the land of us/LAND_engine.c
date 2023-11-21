@@ -6,8 +6,15 @@
 //
 
 #include "LAND_engine.h"
+#include <SDL2/SDL.h>
 
 int LAND_init(void) {
-    SDL_init();
+    SDL_Init( SDL_INIT_VIDEO );
+    
     return 0;
+}
+
+void LAND_terminate(void) {
+    SDL_Quit();
+    return;
 }
