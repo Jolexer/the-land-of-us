@@ -39,6 +39,7 @@
 		ED9638F62B0D305C0082C0C7 /* the land of us */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "the land of us"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED9638F92B0D305C0082C0C7 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		ED9639012B0D32D60082C0C7 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		ED9639052B0D33640082C0C7 /* Defenitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defenitions.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				ED9638F92B0D305C0082C0C7 /* main.c */,
+				ED9639052B0D33640082C0C7 /* Defenitions.h */,
 			);
 			path = "the land of us";
 			sourceTree = "<group>";

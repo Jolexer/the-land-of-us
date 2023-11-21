@@ -6,9 +6,14 @@
 //
 
 //includes
+#include <stdio.h>
+
 #include <SDL2/SDL.h>
+
+#include "Defenitions.h"
 
 //code here
 int main(void) {
+    
     return 0;
 }
