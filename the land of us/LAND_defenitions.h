@@ -12,7 +12,6 @@
 
 struct LAND_window {
     SDL_Window* window;
-    
 };
 
 #endif /* LAND_defenitions_h */

@@ -13,7 +13,10 @@ struct LAND_window* LAND_init(void) {
     SDL_Init( SDL_INIT_VIDEO );
     struct LAND_window* lWindow = malloc(sizeof(struct LAND_window));
     lWindow->window = SDL_CreateWindow("The land of Us.", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 1280, 720, SDL_WINDOW_SHOWN);
-    
+    if (lWindow->window == NULL) {
+        printf("createWindow error: %s\n", SDL_GetError());
+        exit(-1);
+    }
     return lWindow;
 }
 
