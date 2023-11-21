@@ -8,5 +8,6 @@
 #include "LAND_engine.h"
 
 int LAND_init(void) {
+    SDL_init();
     return 0;
 }

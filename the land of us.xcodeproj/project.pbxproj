@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		ED9638FA2B0D305C0082C0C7 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = ED9638F92B0D305C0082C0C7 /* main.c */; };
-		ED9639022B0D32D60082C0C7 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED9639012B0D32D60082C0C7 /* SDL2.framework */; };
 		ED9639032B0D32D60082C0C7 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ED9639012B0D32D60082C0C7 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ED9639082B0D343D0082C0C7 /* LAND_engine.c in Sources */ = {isa = PBXBuildFile; fileRef = ED9639072B0D343D0082C0C7 /* LAND_engine.c */; };
 /* End PBXBuildFile section */
@@ -50,7 +49,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED9639022B0D32D60082C0C7 /* SDL2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
