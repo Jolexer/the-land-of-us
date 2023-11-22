@@ -9,10 +9,16 @@
 #define LAND_defenitions_h
 
 #include <SDL2/SDL.h>
+#include <stdbool.h>
 
 struct LAND_window {
     SDL_Window* window;
     SDL_Surface* surface;
+};
+
+struct LAND_gamestate {
+    struct LAND_window* window;
+    bool quit;
 };
 
 #endif /* LAND_defenitions_h */

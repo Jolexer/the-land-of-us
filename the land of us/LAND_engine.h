@@ -13,7 +13,7 @@
 
 struct LAND_window* LAND_init(void);
 
-int LAND_terminate(struct LAND_window*);
+int LAND_terminate(struct LAND_gamestate*);
 
 
 #endif /* LAND_engine_h */

@@ -31,8 +31,13 @@ struct LAND_window* LAND_init(void) {
 
 
 
-int LAND_terminate(struct LAND_window* lWindow) {
-    free(lWindow);
+int LAND_terminate(struct LAND_gamestate* lGamestate) {
+    //free 
+    free(lGamestate->window);
+    lGamestate->window = NULL; //good practice
+    free(lGamestate);
+    lGamestate = NULL;
+    //terminate SDL
     SDL_Quit();
     return 0;
 }

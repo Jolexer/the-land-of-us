@@ -16,12 +16,14 @@
 //code here
 int main(void) {
     //test
-    struct LAND_window* lWindow= LAND_init();
-    if (lWindow == NULL) {
+    struct LAND_gamestate* lGamestate = malloc(sizeof(struct LAND_gamestate));
+   lGamestate->window = LAND_init();
+    if (lGamestate->window == NULL) {
         goto CLOSE;
     }
+    //main loop i guess?
     SDL_Delay(10000);
 CLOSE:
-    LAND_terminate(lWindow);
+    LAND_terminate(lGamestate);
     return 0;
 }
